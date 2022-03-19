@@ -36,14 +36,16 @@ public class BaseClass_AllFunction {
 	}
 	
 	
-	public static void navigateTo(String urlname) {
+	public static void navigateTo_Refresh(String urlname) {
 	
 		driver.navigate().to(urlname);
-		driver.navigate().back();
-		driver.navigate().forward();
 		driver.navigate().refresh();
 	}
 
+	public static void navigateTo_Back(String urlname) {
+		
+		driver.navigate().to(urlname);
+		driver.navigate().back();
 	
 	public static void sendKeys(WebElement element, String value) {
 		
